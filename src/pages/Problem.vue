@@ -1,5 +1,5 @@
 <template>
-  <div class="problem">
+  <section class="problem">
     <div class="row">
       <b-col md="12">
         <h1 class="title mb-3">{{title}}</h1>
@@ -20,7 +20,7 @@
         </transition>
       </div>
     </form>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -54,7 +54,7 @@ export default {
       return this.problems[problemId]
     },
     isCorrectAnswer () {
-      return this.problemNumber === '1' ? this.answer === 'true' : this.answer === '7'
+      return Number(this.problemNumber) === 1 ? this.answer === 'true' : this.answer === '7'
     },
     nextProblemNumber () {
       return Number(this.problemNumber) + 1

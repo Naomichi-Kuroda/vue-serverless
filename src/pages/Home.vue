@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <section class="home">
     <div class="row">
       <b-col md="6">
         <h1 class="mb-3">Learn JavaScript,<br>one puzzle at a time.</h1>
@@ -11,7 +11,7 @@
         <img src="./../assets/HeroImage.jpg">
       </b-col>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
